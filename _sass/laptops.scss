@@ -2,7 +2,7 @@
 @media (min-width:1200px) {
 
   #carousel-header, .carousel-inner, .item  {
-    max-height: 750px;
+    max-height: 700px;
   }
 
   .item {
@@ -10,6 +10,18 @@
     img {
       width: 100%;
       height: auto;
+    }
+    .carousel-caption {
+      width: 40%;
+      h2 {
+        font-size: 5em;
+      }
+      p {font-size: 2em;}
+      position: absolute;
+      top: 100px;
+      left: 50px;
+      text-align: left;
+      text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.5);
     }
   }
 }
