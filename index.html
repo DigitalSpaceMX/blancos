@@ -11,7 +11,6 @@
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/css/lightbox.min.css" media="screen" title="no title" charset="utf-8">
     <link href="css/main.css" rel="stylesheet">
     <script src="https://use.fontawesome.com/626970b556.js"></script>
 
@@ -65,13 +64,63 @@
   <div class="back-white">
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
-          <h3 class="text-center">Diseño <span class="rose">&</span> Calidad</h2>
+        <h3 class="text-center">Diseño <span class="rose">&</span> Calidad</h2>
+        <div class="col-md-6">
           <p class="text-justify">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
           <p class="text-justify"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .
           </p>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-xs-6 col-sm-4">
+              <a href="images/image1.jpg" data-lightbox="gallery">
+                <div class="thumbnail">
+                  <img src="images/thumb1.png" alt="bedding1" />
+                </div>
+              </a>
+            </div>
+            <div class="col-xs-6 col-sm-4">
+              <a href="images/image2.jpg" data-lightbox="gallery">
+                <div class="thumbnail">
+                  <img src="images/thumb2.png" alt="bedding2" />
+                </div>
+              </a>
+            </div>
+            <div class="col-xs-6 col-sm-4">
+              <a href="images/image3.jpg" data-lightbox="gallery">
+                <div class="thumbnail">
+                  <img src="images/thumb3.png" alt="bedding3" />
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-6 col-sm-4">
+              <a href="images/image4.jpg" data-lightbox="gallery">
+                <div class="thumbnail">
+                  <img src="images/thumb4.png" alt="bedding4" />
+                </div>
+              </a>
+            </div>
+            <div class="col-xs-6 col-sm-4">
+              <a href="images/image5.jpg" data-lightbox="gallery">
+                <div class="thumbnail">
+                  <img src="images/thumb5.png" alt="bedding5" />
+                </div>
+              </a>
+            </div>
+            <div class="col-xs-6 col-sm-4">
+              <a href="images/image6.jpg" data-lightbox="gallery">
+                <div class="thumbnail">
+                  <img src="images/thumb6.png" alt="bedding6" />
+                </div>
+              </a>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -164,7 +213,7 @@
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/js/lightbox.min.js" charset="utf-8"></script>
+    <script src="js/lightbox.js" charset="utf-8"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
 
@@ -184,8 +233,8 @@
           TweenLite.from(text, 1, {x: 300, opacity: 0, ease: Power2.easeOut, delay: 1.5});
         });
         $('#carousel-header').on('slide.bs.carousel', function () {
-            TweenLite.set(h2, {opacity: 0, x: 0});
-            TweenLite.set(text, {opacity: 0, x: 0});
+          TweenLite.set(h2, {opacity: 0});
+          TweenLite.set(text, {opacity: 0});
         });
       });
     </script>
