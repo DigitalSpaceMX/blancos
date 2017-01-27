@@ -11,7 +11,8 @@
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="css/main.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/lightbox.css" rel="stylesheet">
     <script src="https://use.fontawesome.com/626970b556.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -75,7 +76,7 @@
         <div class="col-md-6">
           <div class="row">
             <div class="col-xs-6 col-sm-4">
-              <a href="images/image1.jpg" data-lightbox="gallery">
+              <a href="../images/image1.jpg" data-lightbox="gallery">
                 <div class="thumbnail">
                   <img src="images/thumb1.png" alt="bedding1" />
                 </div>
@@ -212,14 +213,13 @@
   </footer>
 
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
-    <script src="js/lightbox.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="../js/lightbox.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
 
     <script type="text/javascript">
       $(document).ready(function(){
-
         var h2f = $("#carousel-header .first h2")
             textf = $("#carousel-header .first p");
             TweenLite.from(h2f, 1, {x: 300, opacity: 0, ease: Power2.easeOut, delay: 1});
